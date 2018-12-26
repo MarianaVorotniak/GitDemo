@@ -8,7 +8,6 @@ public class GitDemo {
         List<Double> list = DoubleStream.generate(() -> Math.random() * 10).limit(5).boxed().collect(Collectors.toList());
         System.out.println("The random numbers: ");
         list.stream().filter(i -> i<4);
-
     }
 
 }
